@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You?🔪</title>
+
+    <link rel="icon" href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHBscjR4Y2MweDV1cmxleDJlNTU2cmV6a3FzYW9nNGt1bHIwaGk5eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/gWx3EkDJEFe5W/giphy.gif">
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: pink;
+        }
+
+        #text,
+        .buttons {
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        button {
+            padding: 9px;
+            border-radius: 7px;
+            border: 0;
+            font-size: 1.5rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        button:hover{
+            font-size: 1.7rem;
+            transition: all 0.3s;
+        }
+
+        .buttons{
+            display: flex;
+            gap: 50px;
+        }
+        #yes {
+            background-color: rgb(239, 69, 143);
+            color: white;
+        }
+
+        #no {
+            background-color: rgb(239, 69, 143);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 id="text">Will you be my <span>GALENTINE✨</span>?</h3>
+        <img src="/typing.gif" alt="" id="gif">
+        <div class="buttons">
+            <button id="yes" onclick="yes()">Yes</button>
+            <button id="no" onclick="no()">No</button>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function yes() {
+        document.getElementById('text').textContent = "I KNEW IT LMAOO💖✨"
+        document.getElementById('gif').src = "/dance.gif"
+    }
+    function no() {
+        document.getElementById('text').textContent = "WHAT!!! YOU DON'T WANT TO BEEEEE!!!????"
+        document.getElementById('gif').src = "/cat.gif"
+    }
+
+</script>
+
+</html>
