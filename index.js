@@ -11,5 +11,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Lisening at port ${port}`);
+    console.log(`Lisening at port ${port} in http://localhost:3000`);
 })
